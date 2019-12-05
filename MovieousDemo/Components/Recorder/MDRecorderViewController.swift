@@ -65,9 +65,7 @@ class MDRecorderViewController: UIViewController {
             view = STStickerView()
             self.view.addSubview(view)
             view.snp.makeConstraints({ (make) in
-                make.bottom.equalToSuperview()
-                make.left.equalToSuperview()
-                make.right.equalToSuperview()
+                make.bottom.left.right.equalToSuperview()
                 make.height.equalTo(181)
             })
         case .tusdk:
